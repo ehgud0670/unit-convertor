@@ -33,6 +33,10 @@ func convertLength(lengthStr : String) -> String {
     return "error"
 }
 
-print(convertLength(lengthStr: "1.86m"))
-print(convertLength(lengthStr: "186cm"))
-print(convertLength(lengthStr: "186"))
+for _ in 0 ..< 3 {
+    print("값을 입력해주세요. cm or m ( example : 186cm , 1.86m )")
+    if let inputValue = readLine(){
+    print(convertLength(lengthStr: inputValue))
+}
+}
+
