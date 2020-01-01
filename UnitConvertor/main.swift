@@ -8,5 +8,8 @@
 
 import Foundation
 
-print("Hello, World!")
+var someCentiMeter : Int = 120
+var someMeter : Double = 1.86
 
+print("\(Double(someCentiMeter)/100)m")
+print("\(Int(someMeter*100))cm")
